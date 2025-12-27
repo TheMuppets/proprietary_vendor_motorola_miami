@@ -3337,7 +3337,6 @@ PRODUCT_PACKAGES += \
     libofflinelog \
     libopencv \
     libopestriping \
-    libos \
     libpn557_fw \
     libqll10 \
     libqllengine \
