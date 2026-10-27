@@ -3131,6 +3131,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/miami/proprietary/vendor/etc/camera/dual_golden_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dual_golden_wide.bin \
     vendor/motorola/miami/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/motorola/miami/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets.rc \
+    vendor/motorola/miami/proprietary/vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.camera.desktop@2.0-service.rc \
     vendor/motorola/miami/proprietary/vendor/etc/libnfc-PN557.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-PN557.conf \
     vendor/motorola/miami/proprietary/vendor/etc/libnfc-nci_PN557.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci_PN557.conf \
     vendor/motorola/miami/proprietary/vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_628.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_628.xml \
@@ -3161,6 +3162,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/miami/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/motorola/miami/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/motorola/miami/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/motorola/miami/proprietary/vendor/etc/tetras/portrait_repair_composite.model:$(TARGET_COPY_OUT_VENDOR)/etc/tetras/portrait_repair_composite.model \
     vendor/motorola/miami/proprietary/vendor/etc/thermal-engine-miami.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-miami.conf \
     vendor/motorola/miami/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/motorola/miami/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
@@ -3267,6 +3269,7 @@ PRODUCT_PACKAGES += \
     libdepthmapwrapper_secure \
     com.qti.chiusecaseselector \
     com.qti.feature2.anchorsync \
+    com.qti.feature2.arcrawpro \
     com.qti.feature2.demux \
     com.qti.feature2.frameselect \
     com.qti.feature2.fusion \
@@ -3338,9 +3341,12 @@ PRODUCT_PACKAGES += \
     libopencv \
     libopestriping \
     libpn557_fw \
+    libportrait_repair_ppl3_ocl \
     libqll10 \
     libqllengine \
     libremosaic_wrapper \
+    libremosaiclib \
+    librmsclib1 \
     libswregistrationalgo \
     libtfestriping \
     libvidhance \
@@ -3351,6 +3357,8 @@ PRODUCT_PACKAGES += \
     libvidhance_horizon_correction \
     libvidhance_stabilizer \
     libvidhance_zoom_stabilization \
+    motorola.hardware.camera.desktop@1.0 \
+    motorola.hardware.camera.desktop@2.0 \
     sensors.moto \
     sensors.ssc \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
@@ -3358,4 +3366,5 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     com.android.hotwordenrollment.common.util \
     capsense_reset \
-    android.hardware.biometrics.fingerprint@2.1-service-ets
+    android.hardware.biometrics.fingerprint@2.1-service-ets \
+    motorola.hardware.camera.desktop@2.0-service
