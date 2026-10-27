@@ -2479,6 +2479,64 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.qti.feature2.arcrawpro",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/com.qti.feature2.arcrawpro.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libofflinelog",
+                "libsync",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libqdMetaData",
+                "vendor.qti.hardware.display.allocator@3.0",
+                "vendor.qti.hardware.display.mapper@2.0",
+                "vendor.qti.hardware.display.mapper@3.0",
+                "libcamera_metadata",
+                "libutils",
+                "libqti_vndfwk_detect",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libgralloc.qti",
+                "libgralloctypes",
+                "vendor.qti.hardware.display.allocator@4.0",
+                "vendor.qti.hardware.display.mapper@4.0",
+                "vendor.qti.hardware.display.mapperextensions@1.1",
+                "com.qti.chi.override",
+                "com.qti.feature2.generic",
+                "com.qti.feature2.rt",
+                "com.qti.feature2.gs.mannar",
+                "libchilog",
+                "vendor.qti.hardware.vpp@1.1",
+                "vendor.qti.hardware.vpp@1.2",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.qti.feature2.demux",
     owner: "motorola",
     strip: {
@@ -5428,6 +5486,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libportrait_repair_ppl3_ocl",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libportrait_repair_ppl3_ocl.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqll10",
     owner: "motorola",
     strip: {
@@ -5525,6 +5607,54 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libc",
                 "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libremosaiclib",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libremosaiclib.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librmsclib1",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/librmsclib1.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libdl",
+                "liblog",
+                "libc",
             ],
         },
     },
@@ -5843,6 +5973,73 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "motorola.hardware.camera.desktop@1.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/motorola.hardware.camera.desktop@1.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "motorola.hardware.camera.desktop@2.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/motorola.hardware.camera.desktop@2.0.so",
+            ],
+            shared_libs: [
+                "motorola.hardware.camera.desktop@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.media@1.0",
+                "android.hardware.graphics.common@1.0",
+                "android.hardware.graphics.common@1.1",
+                "android.hardware.graphics.common@1.2",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "sensors.moto",
     owner: "motorola",
     strip: {
@@ -6052,6 +6249,49 @@ cc_prebuilt_binary {
                 "android.hardware.biometrics.fingerprint@2.1",
                 "vendor.egistec.hardware.fingerprint@4.0",
                 "com.motorola.hardware.biometric.fingerprint@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "motorola.hardware.camera.desktop@2.0-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libhardware_legacy",
+                "libcamera_metadata",
+                "libhardware",
+                "libhidlbase",
+                "libui",
+                "libgui_vendor",
+                "libyuv",
+                "android.hardware.graphics.bufferqueue@1.0",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "libstagefright_bufferqueue_helper",
+                "libstagefright_foundation",
+                "libbinder",
+                "motorola.hardware.camera.desktop@1.0",
+                "motorola.hardware.camera.desktop@2.0",
                 "libc++",
                 "libc",
                 "libm",
